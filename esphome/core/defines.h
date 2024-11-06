@@ -86,8 +86,6 @@
 #ifdef USE_ARDUINO
 #define USE_CAPTIVE_PORTAL
 #define USE_PROMETHEUS
-#define USE_WEBSERVER
-#define USE_WEBSERVER_PORT 80  // NOLINT
 #define USE_WIFI_WPA2_EAP
 #endif
 
@@ -111,6 +109,8 @@
 #define USE_SPEAKER
 #define USE_SPI
 #define USE_VOICE_ASSISTANT
+#define USE_WEBSERVER
+#define USE_WEBSERVER_PORT 80  // NOLINT
 #define USE_WIFI_11KV_SUPPORT
 
 #ifdef USE_ARDUINO
@@ -147,6 +147,8 @@
 #define USE_SHD_FIRMWARE_DATA \
   {}
 
+#define USE_WEBSERVER
+#define USE_WEBSERVER_PORT 80  // NOLINT
 #endif
 
 #ifdef USE_RP2040
@@ -158,6 +160,8 @@
 
 #ifdef USE_LIBRETINY
 #define USE_SOCKET_IMPL_LWIP_SOCKETS
+#define USE_WEBSERVER
+#define USE_WEBSERVER_PORT 80  // NOLINT
 #endif
 
 #ifdef USE_HOST
