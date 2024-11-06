@@ -4,7 +4,7 @@ import esphome.codegen as cg
 from esphome.components import i2c
 from esphome.const import CONF_ID, CONF_VOLTAGE
 
-CODEOWNERS = ["@jesserockz","@sebydocky"]
+CODEOWNERS = ["@jesserockz", "@sebydocky"]
 DEPENDENCIES = ["i2c"]
 MULTI_CONF = True
 
@@ -33,6 +33,7 @@ CONFIG_SCHEMA = (
     .extend(cv.COMPONENT_SCHEMA)
     .extend(i2c.i2c_device_schema(0x58))
 )
+
 
 async def to_code(config):
     var = cg.new_Pvariable(config[CONF_ID])
