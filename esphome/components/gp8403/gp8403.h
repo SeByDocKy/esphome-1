@@ -22,7 +22,6 @@ class GP8403 : public Component, public i2c::I2CDevice {
 
  protected:
   GP8403Voltage voltage_;
-  
 };
 
 }  // namespace gp8403
