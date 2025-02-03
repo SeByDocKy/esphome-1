@@ -19,7 +19,7 @@ void GP8403Output::write_state(float state) {
   ESP_LOGV(TAG, "Calculated DAC value: %" PRIu16, value);
   i2c::ErrorCode err = this->parent_->write_register(OUTPUT_REGISTER + (2 * this->channel_), (uint8_t *) &value, 2);
   if (err != i2c::ERROR_OK) {
-    ESP_LOGE(TAG, "Error writing to %s, code %d", (this->parent_->gp8413_) ? "GP8413" : "GP8403" ,err);
+    ESP_LOGE(TAG, "Error writing to %s, code %d", (this->parent_->gp8413_) ? "GP8413" : "GP8403", err);
   }
 }
 
