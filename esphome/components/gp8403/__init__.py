@@ -14,7 +14,6 @@ GP8403 = gp8403_ns.class_("GP8403", cg.Component, i2c.I2CDevice)
 GP8403Voltage = gp8403_ns.enum("GP8403Voltage")
 
 CONF_GP8403_ID = "gp8403_id"
-CONF_GP8403 = "gp8403"
 CONF_GP8413 = "gp8413"
 
 VOLTAGES = {
